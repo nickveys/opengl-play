@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<h1>File Descriptions</h1>
+<dl><dt>BezierCurve.{h,cpp}</dt><dd>Class modeling a 2D bezier curve</dd></dl>
+<dl><dt>BezierSurface.h</dt><dd>Class modeling a 3D bezier surface</dd></dl>
+<dl><dt>Camera.{h,cpp}</dt><dd>Camera class from previous work</dd></dl>
+<dl><dt>main.cpp</dt><dd>Entry point, initializes, creates UI</dd></dl>
+
+<h1>Usage</h1>
+<p>To create a bezier curve, click New Curve and start adding points.  Once there are at least 
+3 points the curve will become visible.  Continued clicking adds more points.</p>
+<p>To modify a curve, click Modify Points and click-drag points to change the curve.</p>
+<p>To create a bezier surface, click New Surface and one will be created.</p>
+<p>To rotate the view, click Camera Model and click-drag to change the view on the 
+curve/surface.</p>
+<p>To change U, slide the U spinner from 0 to 1.</p>
+
+<h1>Known Issues</h1>
+<ul>
+<li>Manual creation of surfaces is not implemented.  One has its control points statically 
+defined.</li>
+<li>Shaded surfaces are not implemented.  The quad strip is complete, but no normals are 
+specified.</li>
+<li>Camera rotation is off-axis.  I was unable to see why exactly, as it is a direct use of 
+the camera class as before.</li>
+<li>Surfaces are not modifyable.</li>
+</ul>
+
+</body>
+</html>

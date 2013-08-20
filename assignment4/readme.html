@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<h1>File Descriptions</h1>
+<dl><dt>Camera.{h,cpp}</dt><dd>Class implementing the core functionality of the camera</dd></dl>
+<dl><dt>Object.h</dt><dd>Base class for shapes that can be added to the screen, extensions are contained in here as well</dd></dl>
+<dl><dt>Matrix.{h,cpp}</dt><dd>Matrix class with some modification (documented)</dd></dl>
+<dl><dt>Group.h</dt><dd>Object extension holding multiple objects</dd></dl>
+<dl><dt>Root.h</dt><dd>Specialized Group, acts as the 'world'</dd></dl>
+<dl><dt>common.h</dt><dd>Simple common defines and structs</dd></dl>
+<dl><dt>main.cpp</dt><dd>Entry point, initializes, creates UI</dd></dl>
+
+<h1>Camera Controls</h1>
+<ul>
+<li>Rotate - Click and drag to rotate the view</li>
+<li>Twist - Click and drag left and right to twist left and right</li>
+<li>Zoom - Click and drag up and down to zoom in and out</li>
+<li>Pan - Click and drag to pan the view</li>
+</ul>
+
+<h1>Known Issues</h1>
+<ul>
+<li>The View All seems a bit liberal in its zooming, there is lots of blank area around, it may be 
+due to the sizing of the objects, I tried to keep them at or near 1.0 radius, and some may be smaller so the 
+view all gives them more space.</li>
+</ul>
+
+</body>
+</html>

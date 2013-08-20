@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<h1>File Descriptions</h1>
+<dl><dt>Object.h</dt><dd>Base class for shapes that can be added to the screen, extensions are contained in here as well</dd></dl>
+<dl><dt>Matrix.{h,cpp}</dt><dd>Matrix class with some modification (documented)</dd></dl>
+<dl><dt>Group.h</dt><dd>Object extension holding multiple objects</dd></dl>
+<dl><dt>Root.h</dt><dd>Specialized Group, acts as the 'world'</dd></dl>
+<dl><dt>main.cpp</dt><dd>Entry point, initializes, creates UI</dd></dl>
+
+<h1>Milestone 4</h1>
+<p>
+To add additional objects to a group, select the group to be added to and press th
+<b>Reopen Group</b> button.  This will cause the group to become active and open.  The
+next object will be selected automatically.  After this, successive 'Adds' will add to that
+group as normal.  Then 'Close' the group to complete the operation.
+</p>
+
+<h1>Known Problems</h1>
+<ul>
+    <li>When re-opening a group that has itself been transformed, the objects added will 'jump' 
+    if the group has been rotated.  This is due to my inability to figure out how to get the 
+    difference between the groups rotation and the incoming object.  This was easy to overcome 
+    with translation by simply getting the difference from the object's translation to the 
+    group, but rotation is locked up in the rotation matrix with all x,y,z components meshed 
+    together, I couldn't figure out a good way to get that information out.</li>
+</ul>
+
+</body>
+</html>

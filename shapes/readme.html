@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<h1>File Descriptions</h1>
+<p>Each file is documented internally, here is an overview of them all:</p>
+<dl><dt>Model.{h,cpp}</dt><dd>Base class for shapes that can be added to the screen</dd></dl>
+<dl><dt>Cone.h, Cube.h, Sphere.h, Teapot.h, Torus.h</dt><dd>Concrete shapes</dd></dl>
+<dl><dt>Matrix.{h,cpp}</dt><dd>Supplied Matrix class with some modification (documented)</dd></dl>
+<dl><dt>Util.h</dt><dd>Utility class, contains function to write strings to display</dd></dl>
+<dl><dt>enums.h</dt><dd>Holds some enums used in the system</dd></dl>
+<dl><dt>main.cpp</dt><dd>Entry point</dd></dl>
+
+<h1>Extra Features</h1>
+<ul>
+    <li>Bottom panel starts disabled as there is no object to manipulate</li>
+    <li>Many different shapes</li>
+    <li>Many different colors</li>
+    <li>Current shape can be spun continuously</li>
+    <li>Current shape can be set to "throb" (grow and shrink periodically)</li>
+    <li>The model axis can be optionally shown for the Current shape, All shapes or No shapes</li>
+    <li>OpenGL capability text is written to the screen instead of stdout</li>
+</ul>
+
+<h1>Known Problems</h1>
+<p>No real bugs, just some nuisances I didn't think were too worthy of a lot of extra effort.</p>
+<ul>
+    <li>The bottom panel is sometimes underneath the right panel, hiding the Scale spinners.  Not sure how to fix this other than making the window larger.</li>
+    <li>The line spacing of the OpenGL capabilities text on the screen spaces out as the window is resized.</li>
+	<li>The strings written to screen could get truncated, I allocated 80 characters for them, which was fine for my machine.</li>
+    <li>The rotation sliders tend to jump to a random location after the "spin" animation has been running.</li>
+    <li>GLUI seems to use 100% CPU when idle, demo program also does it, plenty of people on the internet with the same problem.</li>
+</ul>
+
+</body>
+</html>
