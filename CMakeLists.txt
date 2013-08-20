@@ -13,7 +13,11 @@ endif()
 
 set(CMAKE_CXX_FLAGS "-g -Wall")
 
-add_subdirectory(sparks)
+#add_subdirectory(bezier)
 add_subdirectory(paint)
-add_subdirectory(sierpinski)
+#add_subdirectory(scenegraph)
+#add_subdirectory(scenegraph-camera)
+#add_subdirectory(shapes)
 add_subdirectory(shooting-gallery)
+add_subdirectory(sierpinski)
+add_subdirectory(sparks)

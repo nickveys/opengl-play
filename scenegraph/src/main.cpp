@@ -80,7 +80,7 @@ void glutAndGluiInit(int argc, char* argv[]) {
 	glutInitWindowPosition(-1, -1);
 	glutInitWindowSize(640, 480);
  
-	int main_window = glutCreateWindow("Homework 3 - Scenegraph");
+	int main_window = glutCreateWindow("Scenegraph");
 	glutDisplayFunc(display);
 	GLUI_Master.set_glutReshapeFunc(reshape);  
 
