@@ -74,7 +74,7 @@ struct points {
 /*
  * calculate frames-per-second
  */
-inline void fps() {
+void fps() {
   static int frame = 0;
   static int timebase = 0;
 

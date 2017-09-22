@@ -11,7 +11,8 @@ else()
 include_directories(${OPENGL_INCLUDE_DIR})
 endif()
 
-set(CMAKE_CXX_FLAGS "-g -Wall")
+set(CMAKE_C_FLAGS "-g -Wall -Wno-deprecated-declarations")
+set(CMAKE_CXX_FLAGS "-g -Wall -Wno-deprecated-declarations")
 
 #add_subdirectory(bezier)
 add_subdirectory(paint)
