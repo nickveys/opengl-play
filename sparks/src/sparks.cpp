@@ -303,11 +303,15 @@ void keyPress(unsigned char key, int x, int y) {
 			exit(0);
 			break;
 		default:
-			printf("(%x pressed) keys:\n", key);
-			printf("A: More Sparks\nZ: Less Sparks\n");
-			printf("S: More Gravity\nX: Less Gravity\n");
-			printf("D: Bigger Sparks\nC: Smaller Sparks\n");
-			printf("F: Longer Life\nV: Shorter Life\n");
+			printf("Unknown key '%c', keys:\n", key);
+			printf(" A: More Sparks\n");
+			printf(" Z: Less Sparks\n");
+			printf(" S: More Gravity\n");
+			printf(" X: Less Gravity\n");
+			printf(" D: Bigger Sparks\n");
+			printf(" C: Smaller Sparks\n");
+			printf(" F: Longer Life\n");
+			printf(" V: Shorter Life\n");
 	}
 }
 
