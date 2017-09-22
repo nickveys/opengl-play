@@ -10,7 +10,7 @@ void myDisplay()
 {
     /* clear window */
     glClear(GL_COLOR_BUFFER_BIT);
-    
+
     GLintPoint T[3];
     T[0].x = -10;
     T[0].y = -10;
@@ -18,10 +18,10 @@ void myDisplay()
     T[2].y = 10;
     T[1].y = -10;
     T[2].x = 0;
-    
+
     int idx = rand() % 3;
     GLintPoint pt = T[idx];
-    
+
     glPointSize(1.0);
     glBegin(GL_POINTS);
         glVertex2i(pt.x, pt.y);
@@ -34,11 +34,11 @@ void myDisplay()
           glVertex2f(pt.x, pt.y);
         }
     glEnd();
-    
+
     glRotatef(1.0, 0.0, 0.0, 1.0);
-    
+
     /* flush GL buffers */
-    glutSwapBuffers(); 
+    glutSwapBuffers();
 }
 
 void myReshape(int w, int h)
@@ -73,9 +73,9 @@ void myInit(int w, int h)
 }
 
 int main(int argc, char** argv) {
-	const int w = 800;
-	const int h = 600;
-	
+    const int w = 800;
+    const int h = 600;
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(w, h);
